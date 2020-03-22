@@ -5,6 +5,8 @@ import { ContactComponent } from "./contact/contact.component";
 import { AboutComponent } from "./about/about.component";
 import { TripsComponent } from "./trips/trips.component";
 import { TripComponent } from "./trip/trip.component";
+import { BlogComponent } from "./blog/blog.component";
+import { PostComponent } from "./post/post.component";
 
 const routes: Routes = [
   {
@@ -27,6 +29,19 @@ const routes: Routes = [
   {
     component: AboutComponent,
     path: "about"
+  },
+  {
+    path: "blog",
+    children: [
+      {
+        path: ":postId",
+        component: PostComponent
+      },
+      {
+        path: "**",
+        component: BlogComponent
+      }
+    ]
   },
   {
     component: ContactComponent,

@@ -8,13 +8,17 @@ import { HomeModule } from "./home/home.module";
 import { AboutModule } from "./about/about.module";
 import { TripsModule } from "./trips/trips.module";
 import { TripModule } from "./trip/trip.module";
+import { BlogModule } from "./blog/blog.module";
+import { PostModule } from "./post/post.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    BlogModule,
     HomeModule,
+    PostModule,
     TripModule,
     AboutModule,
     TripsModule,
