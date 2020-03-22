@@ -1,4 +1,4 @@
 # Travel-Site
 Website where I offer my services to plan holidays
 
-[![build status](https://github.com/dickwolff/Travel-Site/workflows/Build/badge.svg)](https://github.com/dickwolff/Travel-Site/actions)
+[![build status](https://img.shields.io/github/workflow/status/dickwolff/Travel-Site/Build?style=for-the-badge)](https://github.com/dickwolff/Travel-Site/actions)
