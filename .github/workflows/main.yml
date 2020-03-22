@@ -27,12 +27,12 @@ jobs:
       #  run: |
       #    npm install
       #    npm build --prod
-          
+
       - name: Build & Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: master
           BRANCH: gh-pages
-          FOLDER: "Src/dist/travel"
+          FOLDER: "dist/travel"
           BUILD_SCRIPT: npm install && npm build --prod
