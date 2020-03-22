@@ -31,5 +31,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: master
           BRANCH: gh-pages
-          FOLDER: "./src/dist/travel"
+          FOLDER: "src/dist/travel"
           uses: appleboy/scp-action@master
