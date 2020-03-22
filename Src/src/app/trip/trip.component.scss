@@ -1,0 +1,5 @@
+.container {
+  &.trip:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
