@@ -37,7 +37,11 @@
           </div>
           <div class="listing-item-content">
             <a class="px-3 mb-3 category bg-primary" [routerLink]="['/', 'trips', trip.tripId]">&euro;
-              {{ trip.price }}</a>
+              {{ trip.price }}
+              <ng-container *ngIf="trip.priceType == 0">
+                p.p.
+              </ng-container>
+            </a>
             <h2 class="mb-1">
               <a [routerLink]="['/', 'trips', trip.tripId]">{{ trip.title }}</a>
             </h2>

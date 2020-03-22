@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { TripDay } from "../shared/domain/tripDay.interface";
 import { Trip } from "../shared/domain/trip.interface";
+import { PriceType } from "../shared/domain/priceType.enum";
 
 @Component({
   templateUrl: "./trip.component.html",
@@ -8,9 +9,19 @@ import { Trip } from "../shared/domain/trip.interface";
 })
 export class TripComponent implements OnInit {
 
+  public trip: Trip;
   public days: TripDay[] = [];
 
   ngOnInit() {
+
+    this.trip = {
+      tripId: 4,
+      title: "Campertour W-Amerika (20 dgn)",
+      price: 2500,
+      priceType: PriceType.PerPerson,
+      imageUrl: "assets/images/img_4.jpg",
+      summary: "20 dagen toeren door West-Amerika met eem camperbusje."
+    };
 
     this.days = [
       {
