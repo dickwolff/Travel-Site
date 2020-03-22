@@ -5,7 +5,7 @@ on:
       - master
 
 jobs:
-  build-and-firebase-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     #strategy:
     #  matrix:
@@ -25,9 +25,9 @@ jobs:
           npm ci
           npm run build:ci
           
-      - name: Deploy
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env: 
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      #- name: Deploy
+      #  uses: w9jds/firebase-action@master
+      #  with:
+      #    args: deploy --only hosting
+      #  env: 
+      #    FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
