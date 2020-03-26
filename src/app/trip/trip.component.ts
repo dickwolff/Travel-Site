@@ -16,10 +16,10 @@ export class TripComponent implements OnInit {
 
     this.trip = {
       tripId: 4,
-      title: "Campertour W-Amerika (20 dgn)",
+      title: "Campertour West-Amerika (20 dagen)",
       price: 2500,
       priceType: PriceType.PerPerson,
-      imageUrl: "assets/images/img_4.jpg",
+      imageUrl: "assets/images/WZ8Ed37FIVf8kCcj-croppedQJUWo.jpg",
       summary: "20 dagen toeren door West-Amerika met eem camperbusje."
     };
 
