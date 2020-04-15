@@ -9,7 +9,7 @@
     "e2e": "ng e2e",
     "build:prod": "ng build --prod",
     "build:ghp": "ng build --prod --output-path docs --base-href=/Travel-Site/",
-    "prep-release:ghp": "cp index.html 404.html",
+    "prep-release:ghp": "cd docs && cp index.html 404.html",
     "build-release:ghp": "npm run build:ghp && npm run prep-release:ghp"
   },
   "private": true,
