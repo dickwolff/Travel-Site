@@ -9,7 +9,7 @@
     "e2e": "ng e2e",
     "build:prod": "ng build --prod",
     "build:ghp": "ng build --prod --output-path docs --base-href=/Travel-Site/",
-    "prep-release:ghp": "move-file index.html 404.html",
+    "prep-release:ghp": "cp index.html 404.html",
     "build-release:ghp": "npm run build:ghp && npm run prep-release:ghp"
   },
   "private": true,
@@ -42,7 +42,6 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
-    "move-file": "1.2.0",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
