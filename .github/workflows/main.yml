@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - feature/FourOhFour-Fix
 
 jobs:
   build-and-deploy:
@@ -23,7 +24,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: master
+          BASE_BRANCH: feature/FourOhFour-Fix
           BRANCH: gh-pages
           FOLDER: "docs"
           BUILD_SCRIPT: npm install && npm run build-release:ghp
